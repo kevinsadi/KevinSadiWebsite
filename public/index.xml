@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kevin Sadi</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Kevin Sadi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Feb 2022 23:29:21 +0530</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Third Person Hitscan Firing Systems</title>
+      <link>http://example.org/blogs/markdown-syntax/</link>
+      <pubDate>Thu, 10 Feb 2022 23:29:21 +0530</pubDate>
+      
+      <guid>http://example.org/blogs/markdown-syntax/</guid>
+      <description>Honestly, I was a bit surprised when I embarked on creating a third person shooter how little literature there is on how to properly implement a third person hitscan firing weapon aside from working through an entire course. However, I think the general idea of it is really easy and geometrically satisfying. Let&amp;rsquo;s jump right into it.
+C++ or Blueprints? Either way, it really doesn&amp;rsquo;t matter. I&amp;rsquo;m going to be explaining the theory behind how this works so you can implement it in any system.</description>
+    </item>
+    
+  </channel>
+</rss>

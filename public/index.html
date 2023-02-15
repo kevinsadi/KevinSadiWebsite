@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="generator" content="Hugo 0.110.0"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/images/favicon.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Kevin Sadi" />
+<meta property="og:description" content="Text about my cool site" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/" /><meta property="og:site_name" content="Kevin Sadi Portfolio" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kevin Sadi"/>
+<meta name="twitter:description" content="Text about my cool site"/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #402808;
+        --text-secondary-color: #262626;
+        --background-color: #FFFFFF;
+        --secondary-background-color: #B8B8B8;
+        --primary-color: #BFA980;
+        --secondary-color: #faecd9;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+<meta name="description" content=Text&#32;about&#32;my&#32;cool&#32;site>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+<script defer src="/fontawesome-5/all-5.15.4.js"></script>
+
+  <title>
+Kevin Sadi
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+<header>
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/images/favicon.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hi!
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder="Search my blogs"
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder="Ctrl + k" aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/projects" title="Projects">
+                            
+                            Projects
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <span class="subtitle">
+                    
+                </span>
+                <h2>
+                    I&#39;m Kevin Sadi.
+                </h2>
+                <h3>
+                    Thanks for visiting
+                </h3>
+                <p class="hero-content">
+                    Game Engines, Generative AI, Tech Art, Rendering, Audio Programming
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                        <a href="https://drive.google.com/file/d/1wXduGCEDDc7AoXsf66rPRtO0y-EZ-qFR/view?usp=sharing" class="btn" download
+			  
+                          target="_blank"
+                          >
+                            Resume
+                        </a>
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://github.com/kevinsadi" target="_blank" class="btn social-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/kevinsadi/" target="_blank" class="btn social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    
+
+    
+</span></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="/images/pfp.png"
+                            class="img-thumbnail mx-auto rounded-circle"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">About Me</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="/images/bg_2.JPG" class="img-thumbnail mx-auto" alt="">
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                <p>I&rsquo;m currently a student at Georgia Tech. I work with Greg Turk in his generative AI and graphics lab. I&rsquo;m investigating novel ways to procedurally generate 3D terrain.
+Aside from research, I make games with friends in Unity, UnrealEngine 5, and my own handmade game engine, Kek3D.</p>
+<p>For fun, I play drums with several jazz groups around Atlanta. I also love to play volleyball and/or climb with my friends.</p>
+
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="SpeakEasy">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/speakeasy.png" alt="SpeakEasy">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Unity</span>
+                            
+                            <span class="badge badge-secondary">FMOD</span>
+                            
+                            <span class="badge badge-secondary">HLSL</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">SpeakEasy</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Narrative rhythm game fleshed out with dynamic audio, shaders, and a good time.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://drive.google.com/drive/folders/1Obkw-PPKO5wque43VxJE-6PfYVeOCPC3" target="_blank">
+                                Demo
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Kek3D">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/Logo12-29-2022.png" alt="Kek3D">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">C&#43;&#43;</span>
+                            
+                            <span class="badge badge-secondary">OpenGL</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Kek3D</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Handmade 3D game engine that supports transformations, forward rendering, deferred rendering.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/kevinsadi/kek3d" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/kevinsadi/kek3d" target="_blank">
+                                Code
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="StyleTerrain">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/exportslopelargermax.png" alt="StyleTerrain">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">PyTorch</span>
+                            
+                            <span class="badge badge-secondary">StyleGAN2</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">StyleTerrain</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Robust procedural generation of terrain that allows mixing of different styles of terrain.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/kevinsadi/styleterrain-ada-pytorch" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/kevinsadi/styleterrain-ada-pytorch" target="_blank">
+                                Code
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Experience</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Georgia-Tech-(Research)-Jan-2023---present-tab'
+                                data-bs-target='#pills-Georgia-Tech-(Research)-Jan-2023---present'
+                                aria-controls='Georgia-Tech-(Research)-Jan-2023---present' 
+                            >
+                                Georgia Tech (Research)
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Georgia-Tech-(Teaching)-Aug-2022---December-2022-tab'
+                                data-bs-target='#pills-Georgia-Tech-(Teaching)-Aug-2022---December-2022' 
+                                aria-controls='Georgia-Tech-(Teaching)-Aug-2022---December-2022'
+                            >
+                                Georgia Tech (Teaching)
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Toast-June-2022---Aug-2022-tab'
+                                data-bs-target='#pills-Toast-June-2022---Aug-2022' 
+                                aria-controls='Toast-June-2022---Aug-2022'
+                            >
+                                Toast
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='NCR-Corporation-May-2021---Aug-2021-tab'
+                                data-bs-target='#pills-NCR-Corporation-May-2021---Aug-2021' 
+                                aria-controls='NCR-Corporation-May-2021---Aug-2021'
+                            >
+                                NCR Corporation
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Georgia-Tech-(Research)-Jan-2023---present'
+                            aria-labelledby='pills-Georgia-Tech-(Research)-Jan-2023---present-tab'
+                        >
+                            <div>
+                                <span class="h4">Generative AI Researcher</span>
+                                <small>-</small>
+                                <a href="" target="_blank">Georgia Tech (Research)</a>
+                                <div class="pb-1">
+                                    <small>Jan 2023 - present</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Working&#32;as&#32;a&#32;Generative&#32;AI&#32;Researcher&#32;at&#32;Georgia&#32;Tech&#32;(Research)
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            <ul>
+<li>Worked with Dr. Turk 1:1 on a project in his generative models lab</li>
+<li>Created generative terrain model based on StyleGAN3</li>
+</ul>
+
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Georgia-Tech-(Teaching)-Aug-2022---December-2022'
+                            aria-labelledby='pills-Georgia-Tech-(Teaching)-Aug-2022---December-2022-tab'
+                        >
+                            <div>
+                                <span class="h4">Computer Graphics Teaching Assistant</span>
+                                <small>-</small>
+                                <a href="" target="_blank">Georgia Tech (Teaching)</a>
+                                
+                                <div class="pb-1">
+                                    <small>Aug 2022 - December 2022</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Computer&#32;Graphics&#32;Teaching&#32;Assistant&#32;at&#32;Georgia&#32;Tech&#32;(Teaching)
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <ul>
+<li>Provided 1:1 lessons on real-time rendering and physically-based rendering concepts to 250+ students.</li>
+<li>Worked with other 6 TAs to create materials for lecture and projects, based on ”Fundamentals of Graphics Programming”.</li>
+<li>Taught content pertaining to graphics pipeline (projection, rasterization, shading/shadows, triangle adjacency) and animation.</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Toast-June-2022---Aug-2022'
+                            aria-labelledby='pills-Toast-June-2022---Aug-2022-tab'
+                        >
+                            <div>
+                                <span class="h4">Software Engineering Intern</span>
+                                <small>-</small>
+                                <a href="https://example.com" target="_blank">Toast</a>
+                                
+                                <div class="pb-1">
+                                    <small>June 2022 - Aug 2022</small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <ul>
+<li>Collaborated on full-stack tickets across several teams in E-commerce, completing several high priority tickets per sprint.</li>
+<li>Implemented new end-to-end search functionality using Magento, GraphQL, and React (∼10-13k unique visitors/week).</li>
+<li>Launched testing tool to compare analytics on two live versions of Toast Shop, increasing Shop Purchase Conversion by 1.41%.</li>
+<li>Produced logic for aggregating order receipts on major Kotlin service to automate tax filing, included integration and unit testing.</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-NCR-Corporation-May-2021---Aug-2021'
+                            aria-labelledby='pills-NCR-Corporation-May-2021---Aug-2021-tab'
+                        >
+                            <div>
+                                <span class="h4">Software Engineering Intern</span>
+                                <small>-</small>
+                                <a href="https://example.com" target="_blank">NCR Corporation</a>
+                                
+                                <div class="pb-1">
+                                    <small>May 2021 - Aug 2021</small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <ul>
+<li>Created NCR’s top priority diagnostic tool for the self checkout Kubernetes back-end managing 7 core micro-services.</li>
+<li>Completed full stack application still being used by 100+ Self Checkout Engineers, deployed on Walmart cash registers.</li>
+<li>Developed React Web App through back and forth design work with User Experience (UX) team in Figma.</li>
+<li>Implemented NodeJS endpoints for automatic JIRA ticket creation.</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="education" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Education</h3>
+        <div class="row justify-content-center py-5">
+            
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>Expected Fall 2024</small>
+                                </div>
+                                <h5 class="card-title">Masters of Computer Science</h5>
+                                
+                                
+                                Georgia Institute of Technology, Graphics Specialization
+                                
+                                
+
+                                
+                                <div class="py-1">
+                                    GPA:
+                                    <i>
+                                        <small>4.0/4.0</small>
+                                    </i> 
+                                </div>
+                                
+                                <div class="py-1 education-content">
+                                    <p>Extracurricular Activities</p>
+<ul>
+<li>Video Game Development</li>
+</ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>Graduated Fall 2023</small>
+                                </div>
+                                <h5 class="card-title">Bachelor of Science in Computer Science</h5>
+                                
+                                
+                                Georgia Institute of Technology, Media and Intelligence Specialization
+                                
+                                
+
+                                
+                                <div class="py-1">
+                                    GPA:
+                                    <i>
+                                        <small>3.86/4.0</small>
+                                    </i> 
+                                </div>
+                                
+                                <div class="py-1 education-content">
+                                    <p>Extracurricular Activities</p>
+<ul>
+<li>Video Game Development Club</li>
+<li>Computer Graphics Teaching Assistant</li>
+<li>President of Baha&rsquo;i Club</li>
+<li>Jazz Band (Big Band and Combo)</li>
+</ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Achievements</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://github.com/ArmaanLala/PicselAR" title="HackGT7 Facebook Hackathon Winner" target="_blank">
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">HackGT7 Facebook Hackathon Winner</h5>
+                            <div class="card-text secondary-font">
+                                PicselAR gives users a way to pixelate their background through various means (e.g., hand gesture/slider, distance to a virtual object, and audio level). Built using SparkAR..
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.youtube.com/watch?v=gC2FGTFGS2c&amp;t=269s" title="Displayed Art Installation (Project Lead)" target="_blank">
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Displayed Art Installation (Project Lead)</h5>
+                            <div class="card-text secondary-font">
+                                Installed interactive art installation in Georgia Tech Center for the performing arts for a month. Involved Mediapipe for hand detection, Unity for effects, Arduino for mechatronics, and Max8 for audio.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    <div class="container py-3" id="recent-posts">
+    
+    
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/markdown-syntax/">
+                        <img src="/images/blogs/tempimagelol.png" class="card-img-top" alt="Third Person Hitscan Firing Systems">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/markdown-syntax/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Third Person Hitscan Firing Systems">Third Person Hitscan …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Honestly, I was a bit surprised when I embarked on creating a third person shooter how little literature there is on how to properly implement a third person hitscan firing weapon aside from working through an entire course. However, I think the general idea of it is really easy and geometrically …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Feb 10, 2022</span>
+                    <a href="/blogs/markdown-syntax/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div><div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://linkedin.com" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <div class="pb-2">
+                <a href="http://example.org/" title="Kevin Sadi">
+                    <img alt="Footer logo" src="/images/favicon.png"
+                        height="40px" width="40px">
+                </a>
+            </div>
+            &copy; 2023  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
+    }
+</script>
+
+
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

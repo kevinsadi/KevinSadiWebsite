@@ -119,7 +119,7 @@ params:
     enable: true
     title: "I'm Kevin Sadi."
     subtitle: "Thanks for visiting"
-    content: "Generative AI, Tech Art, Rendering, Audio Programming"
+    content: "Game Engines, Generative AI, Tech Art, Rendering, Audio Programming"
     image: /images/pfp.png
     roundImage: true # Make hero image circular | default false
     button:
@@ -131,23 +131,19 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /images/favicon.png
-          url: "https://example.com"
-
+          url: https://github.com/kevinsadi
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/kevinsadi/
   # About
   about:
     enable: true
     title: "About Me"
     image: "/images/bg_2.JPG"
     content: |-
-      I'm currently a student at Georgia Tech advised by Greg Turk in his generative AI and graphics lab. I'm investigating novel ways to procedurally generate 3D terrain.
+      I'm currently a student at Georgia Tech. I work with Greg Turk in his generative AI and graphics lab. I'm investigating novel ways to procedurally generate 3D terrain.
       Aside from research, I make games with friends in Unity, UnrealEngine 5, and my own handmade game engine, Kek3D.
 
-      For fun, I gig jazz drums around Atlanta with different groups. I also love some Volleyball or Climbing.
+      For fun, I play drums with several jazz groups around Atlanta. I also love to play volleyball and/or climb with my friends.
 
 
   # Experience
@@ -156,45 +152,61 @@ params:
     # title: "Custom Name"
     items:
       - job: "Generative AI Researcher"
-        company: "Georgia Tech"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
+        company: "Georgia Tech (Research)"
+        #companyUrl: "https://example.com"
+        date: "Jan 2023 - present"
         featuredLink:
-          enable: true
+          enable: false
           name: "View the project"
           url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+        content: |
+          - Worked with Dr. Turk 1:1 on a project in his generative models lab
+          - Created generative terrain model based on StyleGAN3
+      
+      - job: "Computer Graphics Teaching Assistant"
+        company: "Georgia Tech (Teaching)"
+        #companyUrl: "https://example.com"
+        date: "Aug 2022 - December 2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          - Provided 1:1 lessons on real-time rendering and physically-based rendering concepts to 250+ students.
+          - Worked with other 6 TAs to create materials for lecture and projects, based on ”Fundamentals of Graphics Programming”.
+          - Taught content pertaining to graphics pipeline (projection, rasterization, shading/shadows, triangle adjacency) and animation.
+
 
       - job: "Software Engineering Intern"
         company: "Toast"
         companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
+        date: "June 2022 - Aug 2022"
         featuredLink:
-          enable: true
+          enable: false
           url: "https://example.com"
         info:
-          enable: true
+          enable: false
           content: I worked as a software developer for more than one year in Amazon.
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+          - Collaborated on full-stack tickets across several teams in E-commerce, completing several high priority tickets per sprint.
+          - Implemented new end-to-end search functionality using Magento, GraphQL, and React (∼10-13k unique visitors/week).
+          - Launched testing tool to compare analytics on two live versions of Toast Shop, increasing Shop Purchase Conversion by 1.41%.
+          - Produced logic for aggregating order receipts on major Kotlin service to automate tax filing, included integration and unit testing.
 
       - job: "Software Engineering Intern"
         company: "NCR Corporation"
         companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
+        date: "May 2021 - Aug 2021"
         info:
           enable: false
         featuredLink:
-          enable: true
+          enable: false
           url: "https://example.com"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          - Created NCR’s top priority diagnostic tool for the self checkout Kubernetes back-end managing 7 core micro-services.
+          - Completed full stack application still being used by 100+ Self Checkout Engineers, deployed on Walmart cash registers.
+          - Developed React Web App through back and forth design work with User Experience (UX) team in Figma.
+          - Implemented NodeJS endpoints for automatic JIRA ticket creation.
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
 
   # Education
   education:
@@ -205,7 +217,7 @@ params:
       - title: "Masters of Computer Science"
         school:
           name: "Georgia Institute of Technology, Graphics Specialization"
-          url: "https://example.org"
+          #url: "https://example.org"
         date: "Expected Fall 2024"
         GPA: "4.0/4.0"
         content: |-
@@ -214,17 +226,19 @@ params:
       - title: "Bachelor of Science in Computer Science"
         school:
           name: "Georgia Institute of Technology, Media and Intelligence Specialization"
-          url: "https://example.org"
+          #url: "https://example.org"
         date: "Graduated Fall 2023"
         GPA: "3.86/4.0"
         content: |-
           Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
+            - Video Game Development Club
+            - Computer Graphics Teaching Assistant
+            - President of Baha'i Club
+            - Jazz Band (Big Band and Combo)
+        #featuredLink:
+        #  enable: true
+        #  name: "My academic record"
+        #  url: "https://example.com"
 
   # Achievements
   achievements:
@@ -233,10 +247,10 @@ params:
     items:
       - title: HackGT7 Facebook Hackathon Winner
         content: PicselAR gives users a way to pixelate their background through various means (e.g., hand gesture/slider, distance to a virtual object, and audio level). Built using SparkAR..
-        url: https://example.com
+        url: https://github.com/ArmaanLala/PicselAR
       - title: Displayed Art Installation (Project Lead)
         content: Installed interactive art installation in Georgia Tech Center for the performing arts for a month. Involved Mediapipe for hand detection, Unity for effects, Arduino for mechatronics, and Max8 for audio.
-        url: "https://github.com/gurusabarish/hugo-profile"
+        url: "https://www.youtube.com/watch?v=gC2FGTFGS2c&t=269s"
 
   # projects
   projects:
@@ -248,41 +262,41 @@ params:
         image: /images/projects/speakeasy.png
         featured:
           name: Demo
-          link: https://hugo-profile.netlify.app
+          link: https://drive.google.com/drive/folders/1Obkw-PPKO5wque43VxJE-6PfYVeOCPC3
         badges:
           - "Unity"
           - "FMOD"
           - "HLSL"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
+        #links:
+        #  - icon: fab fa-github
+        #    url: https://github.com/gurusabarish/hugo-profile
 
 
       - title: Kek3D
         content: Handmade 3D game engine that supports transformations, forward rendering, deferred rendering.
         image: /images/projects/Logo12-29-2022.png
         featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+          name: Code
+          link: https://github.com/kevinsadi/kek3d
         badges:
           - "C++"
           - "OpenGL"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/kevinsadi/kek3d
 
       - title: StyleTerrain
         content: Robust procedural generation of terrain that allows mixing of different styles of terrain.
         image: /images/projects/exportslopelargermax.png
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: Code
+          link: https://github.com/kevinsadi/styleterrain-ada-pytorch
         badges:
           - "PyTorch"
           - "StyleGAN2"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/kevinsadi/styleterrain-ada-pytorch
 
 
   footer:
@@ -295,9 +309,6 @@ params:
     socialNetworks:
       github: https://github.com
       linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
 
   # List pages like blogs and posts
   listPages:
