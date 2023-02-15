@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/blogs/</loc>
+    <loc>https://kevinsadi.github.io/KevinSadiWebsite/blogs/</loc>
     <lastmod>2022-02-10T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/example/</loc>
+    <loc>https://kevinsadi.github.io/KevinSadiWebsite/tags/example/</loc>
     <lastmod>2022-02-10T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://kevinsadi.github.io/KevinSadiWebsite/</loc>
     <lastmod>2022-02-10T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://kevinsadi.github.io/KevinSadiWebsite/tags/</loc>
     <lastmod>2022-02-10T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/blogs/markdown-syntax/</loc>
+    <loc>https://kevinsadi.github.io/KevinSadiWebsite/blogs/markdown-syntax/</loc>
     <lastmod>2022-02-10T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/third-person-shooting/</loc>
+    <loc>https://kevinsadi.github.io/KevinSadiWebsite/tags/third-person-shooting/</loc>
     <lastmod>2022-02-10T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/tags/unreal-engine/</loc>
+    <loc>https://kevinsadi.github.io/KevinSadiWebsite/tags/unreal-engine/</loc>
     <lastmod>2022-02-10T23:29:21+05:30</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://kevinsadi.github.io/KevinSadiWebsite/categories/</loc>
   </url>
 </urlset>
