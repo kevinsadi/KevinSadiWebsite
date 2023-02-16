@@ -286,7 +286,7 @@ params:
             url: https://github.com/kevinsadi/kek3d
 
       - title: StyleTerrain
-        content: Robust procedural generation of terrain that allows mixing of different styles of terrain.
+        content: Robust procedural generation of terrain that allows robust mixing of different styles of terrain.
         image: /images/projects/exportslopelargermax.png
         featured:
           name: Code
