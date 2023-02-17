@@ -152,7 +152,7 @@ params:
     # title: "Custom Name"
     items:
       - job: "Generative AI Researcher"
-        company: "Georgia Tech (Research)"
+        company: "Georgia Tech - Research"
         #companyUrl: "https://example.com"
         date: "Jan 2023 - present"
         featuredLink:
@@ -161,10 +161,10 @@ params:
           url: "https://example.com"
         content: |
           - Worked with Dr. Turk 1:1 on a project in his generative models lab
-          - Created generative terrain model based on StyleGAN3
+          - Created generative terrain model based on StyleGAN2
       
       - job: "Computer Graphics Teaching Assistant"
-        company: "Georgia Tech (Teaching)"
+        company: "Georgia Tech - Teaching"
         #companyUrl: "https://example.com"
         date: "Aug 2022 - December 2022"
         featuredLink:
@@ -174,8 +174,7 @@ params:
           - Provided 1:1 lessons on real-time rendering and physically-based rendering concepts to 250+ students.
           - Worked with other 6 TAs to create materials for lecture and projects, based on ”Fundamentals of Graphics Programming”.
           - Taught content pertaining to graphics pipeline (projection, rasterization, shading/shadows, triangle adjacency) and animation.
-
-
+      
       - job: "Software Engineering Intern"
         company: "Toast"
         companyUrl: "https://example.com"
@@ -218,7 +217,7 @@ params:
         school:
           name: "Georgia Institute of Technology, Graphics Specialization"
           #url: "https://example.org"
-        date: "Expected Fall 2024"
+        date: "Expected Spring 2024"
         GPA: "4.0/4.0"
         content: |-
           Extracurricular Activities
@@ -227,12 +226,13 @@ params:
         school:
           name: "Georgia Institute of Technology, Media and Intelligence Specialization"
           #url: "https://example.org"
-        date: "Graduated Fall 2023"
+        date: "Expected Spring 2023"
         GPA: "3.86/4.0"
         content: |-
           Extracurricular Activities
             - Video Game Development Club
             - Computer Graphics Teaching Assistant
+            - Generative AI research
             - President of Baha'i Club
             - Jazz Band (Big Band and Combo)
         #featuredLink:
