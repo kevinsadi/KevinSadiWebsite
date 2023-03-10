@@ -55,7 +55,7 @@ Menus:
 
 params:
   title: "Kevin Sadi Portfolio"
-  description: Text about my cool site
+  description: Kevin Sadi's Blog and Portfolio
   # staticPath: ""  # The path to serve the static files from
   favicon: "/images/favicon.png"
 
@@ -262,7 +262,7 @@ params:
         image: /images/projects/speakeasy.png
         featured:
           name: Demo
-          link: https://drive.google.com/drive/folders/1Obkw-PPKO5wque43VxJE-6PfYVeOCPC3
+          link: https://captainturnip.itch.io/speakeasy
         badges:
           - "Unity"
           - "FMOD"
@@ -286,17 +286,17 @@ params:
             url: https://github.com/kevinsadi/kek3d
 
       - title: StyleTerrain
-        content: Robust procedural generation of terrain that allows robust mixing of different styles of terrain.
+        content: Robust procedural generation of terrain that allows robust mixing of different styles of terrain. 
         image: /images/projects/exportslopelargermax.png
         featured:
           name: Code
-          link: https://github.com/kevinsadi/styleterrain-ada-pytorch
+          link: https://github.com/kevinsadi/StyleTerrain
         badges:
           - "PyTorch"
           - "StyleGAN2"
         links:
           - icon: fab fa-github
-            url: https://github.com/kevinsadi/styleterrain-ada-pytorch
+            url: https://github.com/kevinsadi/StyleTerrain
 
 
   footer:
@@ -307,8 +307,8 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
+      github: https://github.com/kevinsadi
+      linkedin: https://linkedin.com/kevinsadi
 
   # List pages like blogs and posts
   listPages:
