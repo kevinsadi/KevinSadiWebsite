@@ -125,7 +125,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/file/d/1TEkX4DwqZ6ohq01WXSLS-E4zCl5QlANQ/view?usp=sharing"
+      url: "https://drive.google.com/file/d/1BZue8APpVtYx9yLr1TLR0yl_Sq5SdY-j/view?usp=sharing"
       download: true
       newPage: true
     socialLinks:
@@ -255,7 +255,7 @@ params:
         image: /images/projects/PicselAR.png
       - title: Displayed Art Installation (Project Lead)
         content: Installed interactive art installation in Georgia Tech Center for the performing arts for a month. Involved Mediapipe for hand detection, Unity for effects, Arduino for mechatronics, and Max8 for audio.
-        url: "https://www.youtube.com/watch?v=gC2FGTFGS2c"
+        url: "https://youtu.be/gC2FGTFGS2c?t=193"
         image: /images/projects/vip2.png
 
 
@@ -265,7 +265,7 @@ params:
     # title: "Custom Name"
     items:
       - title: SpeakEasy
-        content: Narrative rhythm game fleshed out with dynamic audio, shaders, and a good time.
+        content: Narrative rhythm game fitted with a dynamic audio system, shaders, and entirely custom assets. 
         image: /images/projects/speakeasy.png
         featured:
           name: Demo
