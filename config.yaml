@@ -120,8 +120,8 @@ params:
     title: "I'm Kevin Sadi."
     subtitle: "Thanks for visiting"
     content: "Game Engines, Generative AI, Tech Art, Rendering, Audio Programming"
-    image: /images/pfp.png
-    roundImage: true # Make hero image circular | default false
+    image: /images/picture_me.jpg
+    roundImage: false # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
@@ -138,12 +138,14 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/bg_2.JPG"
+    image: "/images/inoffice2.jpg"
+    roundImage: false # Make hero image circular | default false
     content: |-
-      I'm currently a student at Georgia Tech. I work with Greg Turk in his generative AI and graphics lab. I'm investigating novel ways to procedurally generate 3D terrain.
+      I'm a student at Georgia Tech. I work with Greg Turk in his generative AI and graphics lab. I'm investigating novel ways to procedurally generate 3D terrain.
       Aside from research, I make games with friends in Unity, UnrealEngine 5, and my own handmade game engine, Kek3D.
 
-      For fun, I play drums with several jazz groups around Atlanta. I also love to play volleyball and/or climb with my friends.
+      For fun, I play drums with several jazz groups around Atlanta. I also love to play volleyball or climb with friends. You can probably catch me on the beach courts on West
+      campus or at one of the Stone Summit locations.
 
 
   # Experience
@@ -160,8 +162,10 @@ params:
           name: "View the project"
           url: "https://example.com"
         content: |
-          - Worked with Dr. Turk 1:1 on a project in his generative models lab
-          - Created generative terrain model based on StyleGAN2
+          - Collaborate 1:1 with Greg Turk to complete independent research project
+          - Created generative terrain model based on StyleGAN2 visualized using Kek3D
+          - Discuss cutting edge research in reading group that meets once a week to discuss content of papers
+          - Modify StyleGAN2 to create textures and output multidimensional "images" which project to 3D
       
       - job: "Computer Graphics Teaching Assistant"
         company: "Georgia Tech - Teaching"
@@ -172,7 +176,7 @@ params:
           url: "https://example.com"
         content: |
           - Provided 1:1 lessons on real-time rendering and physically-based rendering concepts to 250+ students.
-          - Worked with other 6 TAs to create materials for lecture and projects, based on ”Fundamentals of Graphics Programming”.
+          - Worked with other 6 TAs to create materials for lecture and projects, based on "Fundamentals of Graphics Programming".
           - Taught content pertaining to graphics pipeline (projection, rasterization, shading/shadows, triangle adjacency) and animation.
       
       - job: "Software Engineering Intern"
@@ -248,9 +252,12 @@ params:
       - title: HackGT7 Facebook Hackathon Winner
         content: PicselAR gives users a way to pixelate their background through various means (e.g., hand gesture/slider, distance to a virtual object, and audio level). Built using SparkAR..
         url: https://github.com/ArmaanLala/PicselAR
+        image: /images/projects/PicselAR.png
       - title: Displayed Art Installation (Project Lead)
         content: Installed interactive art installation in Georgia Tech Center for the performing arts for a month. Involved Mediapipe for hand detection, Unity for effects, Arduino for mechatronics, and Max8 for audio.
-        url: "https://www.youtube.com/watch?v=gC2FGTFGS2c&t=269s"
+        url: "https://www.youtube.com/watch?v=gC2FGTFGS2c"
+        image: /images/projects/vip2.png
+
 
   # projects
   projects:
