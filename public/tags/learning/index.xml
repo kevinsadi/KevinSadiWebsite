@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning on Kevin Sadi</title>
+    <link>https://portfolio-website-dvt3.onrender.com/tags/learning/</link>
+    <description>Recent content in Learning on Kevin Sadi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Mar 2023 23:29:21 +0530</lastBuildDate><atom:link href="https://portfolio-website-dvt3.onrender.com/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Beyond Rote Practice: Embracing Failure</title>
+      <link>https://portfolio-website-dvt3.onrender.com/blogs/learning-beyond-rote-practice/</link>
+      <pubDate>Fri, 10 Mar 2023 23:29:21 +0530</pubDate>
+      
+      <guid>https://portfolio-website-dvt3.onrender.com/blogs/learning-beyond-rote-practice/</guid>
+      <description>When browsing the internet and talking to new game developers, I have noticed math is often viewed as a barrier to creative development. In this blogpost, I want to show some techniques I’ve used to make math another tool in my toolkit to create interactive experiences. This blog post will not explain all of the math that you will likely encounter through a game development or animation journey. If you wish to start there, you can reference my list of helpful learning resources.</description>
+    </item>
+    
+    <item>
+      <title>This page is a WIP</title>
+      <link>https://portfolio-website-dvt3.onrender.com/portfolio/yes/</link>
+      <pubDate>Fri, 10 Mar 2023 23:29:21 +0530</pubDate>
+      
+      <guid>https://portfolio-website-dvt3.onrender.com/portfolio/yes/</guid>
+      <description>When browsing the internet and talking to new game developers, I have noticed math is often viewed as a barrier to creative development. In this blogpost, I want to show some techniques I’ve used to make math another tool in my toolkit to create interactive experiences. This blog post will not explain all of the math that you will likely encounter through a game development or animation journey. If you wish to start there, you can reference my list of helpful learning resources.</description>
+    </item>
+    
+  </channel>
+</rss>

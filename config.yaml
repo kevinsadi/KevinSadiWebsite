@@ -29,10 +29,10 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    - identifier: project
-      name: Projects
-      title: Projects
-      url: /projects
+    - identifier: portfolio
+      name: Portfolio
+      title: Portfolio
+      url: /portfolio
       weight: 2
 
     #Dropdown menu
@@ -257,7 +257,10 @@ params:
         content: Installed interactive art installation in Georgia Tech Center for the performing arts for a month. Involved Mediapipe for hand detection, Unity for effects, Arduino for mechatronics, and Max8 for audio.
         url: "https://youtu.be/gC2FGTFGS2c?t=193"
         image: /images/projects/vip2.png
-
+      - title: Winner of Toast Grant Challenge 
+        content: Gave a pitch to donate $5000 to a charity of our choosing, OurTable. Our presentation was the winner out of our intern cohort. We chose to donate to a small charity in Dublin that serves food to the immigrants who are without support networks.
+        url: "http://www.ourtable.ie/"
+        image: /images/OurTable.png
 
   # projects
   projects:
@@ -280,7 +283,7 @@ params:
 
 
       - title: Kek3D
-        content: Handmade 3D game engine that supports transformations, forward rendering, deferred rendering.
+        content: Handmade 3D game engine that supports transformations, texturing, forward rendering, and procedural terrain generation.
         image: /images/projects/Logo12-29-2022.png
         featured:
           name: Code

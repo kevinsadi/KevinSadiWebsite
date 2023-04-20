@@ -6,15 +6,14 @@
     <description>Recent content in Blogs on Kevin Sadi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Feb 2022 23:29:21 +0530</lastBuildDate><atom:link href="https://portfolio-website-dvt3.onrender.com/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Mar 2023 23:29:21 +0530</lastBuildDate><atom:link href="https://portfolio-website-dvt3.onrender.com/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Third Person Hitscan Firing Systems</title>
-      <link>https://portfolio-website-dvt3.onrender.com/blogs/markdown-syntax/</link>
-      <pubDate>Thu, 10 Feb 2022 23:29:21 +0530</pubDate>
+      <title>Learning Beyond Rote Practice: Embracing Failure</title>
+      <link>https://portfolio-website-dvt3.onrender.com/blogs/learning-beyond-rote-practice/</link>
+      <pubDate>Fri, 10 Mar 2023 23:29:21 +0530</pubDate>
       
-      <guid>https://portfolio-website-dvt3.onrender.com/blogs/markdown-syntax/</guid>
-      <description>Honestly, I was a bit surprised when I embarked on creating a third person shooter how little literature there is on how to properly implement a third person hitscan firing weapon aside from working through an entire course. However, I think the general idea of it is really easy and geometrically satisfying. Let&amp;rsquo;s jump right into it.
-C++ or Blueprints? Either way, it really doesn&amp;rsquo;t matter. I&amp;rsquo;m going to be explaining the theory behind how this works so you can implement it in any system.</description>
+      <guid>https://portfolio-website-dvt3.onrender.com/blogs/learning-beyond-rote-practice/</guid>
+      <description>When browsing the internet and talking to new game developers, I have noticed math is often viewed as a barrier to creative development. In this blogpost, I want to show some techniques I’ve used to make math another tool in my toolkit to create interactive experiences. This blog post will not explain all of the math that you will likely encounter through a game development or animation journey. If you wish to start there, you can reference my list of helpful learning resources.</description>
     </item>
     
   </channel>

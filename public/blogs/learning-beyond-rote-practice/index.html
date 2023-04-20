@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/images/favicon.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Learning Beyond Rote Practice: Embracing Failure" />
+<meta property="og:description" content="When browsing the internet and talking to new game developers, I have noticed math is often viewed as a barrier to creative development. In this blogpost, I want to show some techniques I’ve used to make math another tool in my toolkit to create interactive experiences. This blog post will not explain all of the math that you will likely encounter through a game development or animation journey. If you wish to start there, you can reference my list of helpful learning resources." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://portfolio-website-dvt3.onrender.com/blogs/learning-beyond-rote-practice/" /><meta property="article:section" content="blogs" />
+<meta property="article:published_time" content="2023-03-10T23:29:21+05:30" />
+<meta property="article:modified_time" content="2023-03-10T23:29:21+05:30" /><meta property="og:site_name" content="Kevin Sadi Portfolio" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Learning Beyond Rote Practice: Embracing Failure"/>
+<meta name="twitter:description" content="When browsing the internet and talking to new game developers, I have noticed math is often viewed as a barrier to creative development. In this blogpost, I want to show some techniques I’ve used to make math another tool in my toolkit to create interactive experiences. This blog post will not explain all of the math that you will likely encounter through a game development or animation journey. If you wish to start there, you can reference my list of helpful learning resources."/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #402808;
+        --text-secondary-color: #262626;
+        --background-color: #FFFFFF;
+        --secondary-background-color: #B8B8B8;
+        --primary-color: #BFA980;
+        --secondary-color: #faecd9;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-5/all-5.15.4.js"></script>
+
+  <title>
+Learning Beyond Rote Practice: Embracing Failure | Kevin Sadi
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+<header>
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/images/favicon.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Hi!
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Search my blogs'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blogs" title="Blog posts">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/portfolio" title="Portfolio">
+                            
+                            Portfolio
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Learning Beyond Rote Practice: Embracing Failure</h1>
+            <div class="text-center">
+              Kevin Sadi 
+              <small>|</small>
+              Mar 10, 2023
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid" src="/images/blogs/rote/plane.png" alt="Learning Beyond Rote Practice: Embracing Failure">
+          </div>
+          
+          <article class="page-content  p-2">
+          <p>When browsing the internet and talking to new game developers, I have noticed math is often viewed as a barrier to creative development. In this blogpost, I want to show some techniques I’ve used to make math another tool in my toolkit to create interactive experiences. This blog post will not explain all of the math that you will likely encounter through a game development or animation journey. If you wish to start there, you can reference my list of <a href="https://github.com/kevinsadi/Links">helpful learning resources</a>.</p>
+<p>However, I believe this blogpost will be helpful even if you do not yet feel comfortable with the fundamentals of the math used in game development. This blogpost reframes math to be a creative tool. Math can be leveraged to assist in visualizing what is in your mind, similar to the tools are built into your game engine of choice. Moreso, I believe it is not impossible for anyone to learn how to use math in a creative way. Furthermore, this can be expanded to overcome any barrier in the way of creating. Here, I explain the learning strategies I’ve used to help make this shift of mindset when I use math in my own projects.</p>
+<h1 id="a-personal-story">A Personal Story</h1>
+<p>I was never the best at math classes in early education. While I found the content interesting, I lagged behind my peers. I saw many of my friends follow the advanced math tracks, while I struggled to wrap my head around the basics of algebra. I wouldn’t understand why I wouldn’t progress. The content was interesting, but some concepts would not remain in my mind after an exam. Eventually, I reached precalculus and I was failing my exams. I was an overachieving child, so it shocked me to see I was doing so bad. Luckily, I was given the opportunity to go to a local tutor. She volunteered to help teach the local community for free. Once every other week she would set up a small white table in the park, and she would call over students from the park to ask their questions.</p>
+<p>She taught me the higher level ideas of what I was learning in my classes. She would ask me guiding questions that seemed to directly target what I did not understand. She pushed me to think outside of the context of the exact problem that I was working on. I could understand what y=x would look like on a graph. However, would I understand what that line meant? Did I understand that it was the valid solutions to that same equation? I was good at finding the patterns to solve an exact question, but it was the first time I started working outside of that boundary. I became a lot more comfortable with failure and asking questions even if I thought the would percieve the question as stupid. Since then, math started to click in the final two years of my high school education. With lots of work, I now study computer graphics, a field which uses techniques entirely guided by mathematical principles.</p>
+<p>Until recently, despite my background in mathematics, I still viewed mathematics as a barrier to my creative journey. I recognized when math was <em>necessary</em> to accomplish a task. However, it was still difficult to apply what I’ve learned in contexts outside of where I’ve directly seen it used before. A peer recommended that I should read <a href="https://www.amazon.com/Make-Stick-Science-Successful-Learning/dp/0674729013">“Make It Stick, The Science Of Successful Learning”</a> by Peter C Brown. The book called me to practice a lot of the same principles taught to me by that same tutor those years ago. From there, I started to become more creative with how I used the math that I&rsquo;ve learned before.</p>
+<h1 id="rote-practice">Rote Practice</h1>
+<p>Rote practice, which is also referred to as rote learning or rote memorization, refers to a technique of learning where you learn by repeating the same process without necessarily understanding the underlying concepts or principles. Rote practice is employed when writing a formula over and over with the hope of learning it. Rote practice sessions are often long and intense. This is also known as “cramming.”</p>
+<p>The process of strengthening our mental representations of concepts for long term memory is called consolidation. This is the process we want to target and encourage by moving away from rote and massed practice. I argue that you can strengthen this process through challenging yourself. Specifically, by spacing your practice, interleaving practice, and expanding on and testing yourself after coming to a solution. Let’s begin by discussing the importance of quizzing oneself.</p>
+<h2 id="the-testing-effect">The Testing Effect:</h2>
+<p>It is very easy to have an illusion of knowing. We are always attempting to make judgements on just how much we know or don’t know something. In Daniel Kahneman’s, professor of psychology at Princeton, book “Thinking, Fast and Slow,” he describes two different systems of thinking. One is very quick, and one is very slow. The quick system of thinking is the one we find ourselves relying on most of the time through our day to day. This is the system we rely on when we make quick split second decisions like which direction to go when we walk out of our house in the morning. However, this system is very prone to mistakes. We must ensure that we are not making mistakes when we believe we know a subject matter well. Two cognitive scientists, Roediger and Karpicke, released a very influential paper in 2006 that described what they call the “testing effect.” The study found that taking a test on material you have learned significantly improves the long-term retention of that material more than just re-reading the material. This suggests that active effort with the material is more conducive to long term learning than passive rote practice.</p>
+<h2 id="interleaved-spaced-periodic-practice">Interleaved, Spaced, Periodic Practice:</h2>
+<p>Next, let us discuss the importance of spaced and interleaved practice. Decades of research on memory and recall have led to the same result on what is called the “spacing effect.” This effect describes that having spaced study sessions often results in more effective learning. This can be seen by a study conducted by Cepeda et al. (2006) in which participants were asked to recall verbal phrases. They found that participants who used spaced practice on memory tasks remembered the material better than those who used massed/rote practice in 259 out of the 271 total trials. This was supported as far back as 1993 by a study by Bahrick et al. that also independently found that spaced repetition has led to better learning. They did so by testing the retrieval abilities of 27 PhDs after giving them information to memorize all at once, and also giving it to them in spaced quantities. They also discussed the importance of periodic practice in the paper. Consistently referring back and practicing the material gives more opportunities to undergo retrieval of the material, better consolidating it in the mind.</p>
+<h1 id="an-example-virtual-gardening">An Example: Virtual Gardening</h1>
+<p>Let’s walk through an example in the world of Computer Graphics. For this example, I assume some mathematical knowledge. This information can be found on my <a href="https://github.com/kevinsadi/Links">helpful learning resources</a>. I encourage you to attempt to create a virtual garden yourself. You can use this example to learn any tool along the way, depending on your comfort level. If you are entirely new, try to do this example in Blender. If you have some programming experience, try Processing. If you already understand graphics programming, try to follow along using OpenGL.</p>
+<p>Do not worry, we will leverage our learning skills and practice generative learning as we walk through the example. The effort will add to our learning experience. Consider the case of wanting to create a virtual garden. The first step will be just to make a 2D plane in a 3D space. Try to think of what that would look like before moving on. The process of visualizing this space yourself practices effortful learning.</p>
+<p><img src="/images/blogs/rote/plane.png" alt="2d plane in 3d space"></p>
+<p>Let’s notice that this plane has 4 points in 3D space that define it. These are the only points we need to create our 2D plane. But now, let’s add an additional constraint. Let’s consider the case where you want to create the same shape using only triangles? Can you think about how you could approach using those same points to create the same shape, but only with triangles? Often, in computer graphics, all of the 3D geometry (shapes) that you see is composed of many triangles. This is because the hardware on the computer is optimized to render (make images appear) on your screen.</p>
+<p><img src="/images/blogs/rote/3points.png" alt="3 Points on a plane"></p>
+<p>Let’s say that we can make two triangles out of the plane. Let’s focus on 1 triangle and select corners 1, 2, and 3. We often call these points in 3D space “vertices.” We can use these 3 vertices to define a triangle in 3D space. We can have a vector point away from the face that we just created using these three points. This is called a normal vector, and it is often leveraged to create shading effects on the surface of an object that we make.</p>
+<p><img src="/images/blogs/rote/drawn.png" alt="Annotated Image"></p>
+<p>Great! We now have a single triangle. We can apply the same idea to create a second triangle, and we have a plane. You might notice that if we wanted to make a second triangle, the points overlap. What could we do in this situation? Well, we can start off simple and just say we won’t reuse vertices. Thus, it would take 6 vertices to define the 2d plane. However, as we create larger models that use more shared triangles, this can blow up very quickly. Instead, we can assign a number to each vertex that defines the plane. Then, we can reference those numbers when we create our triangles, 3 vertices per triangle. Try to wrestle with this idea in your head and truly convince yourself of how it works. Once you have done so, come back to the rest of this. This would help practice generation and effortful learning with the content.</p>
+<p>Now that you have convinced yourself of the concept, let’s continue on our example of creating a virtual garden. Now that we have a single plane, we can move any of our 4 vertices to create variations in elevation. However, the amount of elevation variation we can make with 4 vertices is quite limited. Thus, we need more points! We can extend the exact same idea we have above to create a larger plane of many points. This will perceptually look the exact same, but the plane we see will actually be composed of many vertices. We can take these points and use any method to make the ground look more ground-like. In this example, I just manually sculpted the plane to look like rolling hills, but there are many ways to tackle this problem. You can use real elevation data, use Perlin noise to create elevation changes procedurally, or even use Machine Learning to create these changes in elevation!</p>
+<p>While we have the general structure of some terrain now, it’s not quite satisfying until we can see some color on our terrain. We can do this using textures. Effectively, we’ll just take any picture that we want and we can put it on top of our terrain. We can do this by assigning every single vertex an extra value. Right now, each vertex has 3 values. The three values correspond to the x coordinate, y coordinate, and z coordinate of the vertex respectively. Now, we can just attach another 2 values to each vertex. One for what x value we want to sample from an image and one for the y value we want to sample from an image. Programs like Blender and Processing handle this for us. However, for OpenGL, you will have to manually specify this yourself.</p>
+<p><img src="/images/blogs/rote/final.png" alt="The finished project image"></p>
+<p>Congratulations on creating your own virtual garden. While we can celebrate now, it’s not time to remove all this information from your brain. <em>Try to quiz yourself</em>. I cannot stress how important quizzing yourself is to inform how much you have interalized the content. It may point out some lapses in knowledge that were not immediately apparent. When you’re done, feel free to compare your answers. I’ve also attached my <a href="https://github.com/kevinsadi/Links">OpenGL implementation</a> here if you want to try to implement this exercise yourself.</p>
+<h3 id="questions">Questions:</h3>
+<ul>
+<li>How many distinct vertices would you need to create a cube? Hint: a cube has 6 faces?</li>
+<li>How would the above question be different if we could reuse vertices? What if we can’t?</li>
+<li>Why might this be significant?</li>
+</ul>
+<h3 id="answers">Answers:</h3>
+<ul>
+<li>36 vertices. 6 vertices per face * 6 faces. We don’t reuse any points.</li>
+<li>It would only take 8 vertices. One for each corner of a cube.</li>
+<li>We have to store less data for a mesh if we have less vertices. Efficiency is everything for real-time graphics applications.</li>
+</ul>
+<h1 id="conclusion">Conclusion</h1>
+<p>Throughout this example, I attempted to point out where I was using the learning techniques outlined above instead of Rote Learning. Using effortful recall, the testing effect, and interleaved practice allowed me to be less intimidated to use these mathematical principles to create my terrain. It also helped me a lot to not be afraid to fail. When I failed, I also learned. In this way, it was exciting to fail, because I knew everytime I failed I learned. However, It is challenging to practice using these techniques instead of rote learning because they feel as though they take longer. This is okay, and it&rsquo;s human.</p>
+<p>I personally found it incredibly satisfying to see all of these lessons being shown through arbitrary problems that I encountered in computer graphics. It was a good exercise in practicing my understanding to write it out, and I encourage you to go out and play with the concepts yourself. I have included links of resources that are good to get initial understandings of the content, so that you can go on and extend and experiment with the concepts yourself later.</p>
+<h1 id="resources">Resources</h1>
+<ul>
+<li><a href="https://learnopengl.com/Introduction">Great site for learning graphics and openGL</a></li>
+<li><a href="https://processing.org/tutorials">Processing tutorials by the creator of Processing himself.</a></li>
+<li><a href="https://www.youtube.com/watch?v=nIoXOplUvAw">The famous donut tutorial. Great resource for learning Blender.</a></li>
+</ul>
+
+          </article>
+        </div>
+      </div>
+     
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    <div class="container py-3" id="recent-posts">
+    
+    
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/blogs/learning-beyond-rote-practice/">
+                        <img src="/images/blogs/rote/plane.png" class="card-img-top" alt="Learning Beyond Rote Practice: Embracing Failure">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blogs/learning-beyond-rote-practice/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Learning Beyond Rote Practice: Embracing Failure">Learning Beyond Rote …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>When browsing the internet and talking to new game developers, I have noticed math is often viewed as a barrier to creative development. In this blogpost, I want to show some techniques I’ve used to make math another tool in my toolkit to create interactive experiences. This blog post will not …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Mar 10, 2023</span>
+                    <a href="/blogs/learning-beyond-rote-practice/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div><div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/kevinsadi" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://linkedin.com/kevinsadi" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <div class="pb-2">
+                <a href="https://portfolio-website-dvt3.onrender.com/" title="Kevin Sadi">
+                    <img alt="Footer logo" src="/images/favicon.png"
+                        height="40px" width="40px">
+                </a>
+            </div>
+            &copy; 2023  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
+    }
+</script>
+
+
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
