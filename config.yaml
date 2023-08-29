@@ -120,7 +120,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/file/d/1BZue8APpVtYx9yLr1TLR0yl_Sq5SdY-j/view?usp=sharing"
+      url: "https://drive.google.com/file/d/1_aQYtM2x8QnKmihUFq7u8k2kTpUPCBao/view?usp=sharing"
       download: true
       newPage: true
     socialLinks:
@@ -148,7 +148,7 @@ params:
         #links:
         #  - icon: fab fa-github
         #    url: https://github.com/gurusabarish/hugo-profile
-        url: "https://toast.org/"
+        url: "https://captainturnip.itch.io/speakeasy"
 
       - title: Lei3D
         content: Handmade 3D game engine using OpenGL and C++ used to create of a physics-based movement game inspired by the Source Engine.
@@ -165,7 +165,7 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/kevinsadi/lei3d
-        url: "https://toast.org/"
+        url: "http://kevinsadi.com/blogs/lei3d-and-skylei/"
 
       - title: StyleTerrain
         content: Robust procedural generation of terrain that allows robust mixing of different styles of terrain.
@@ -179,7 +179,7 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/kevinsadi/StyleTerrain
-        url: "https://toast.org/"
+        url: "https://github.com/kevinsadi/StyleTerrain"
 
   # Achievements
   achievements:

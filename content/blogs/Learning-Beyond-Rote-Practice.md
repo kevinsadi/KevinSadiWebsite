@@ -8,7 +8,7 @@ tags:
   - Math
   - Computer Graphics
   - Learning
-image: /images/blogs/rote/plane.png
+image: /images/blogs/rote/math.png
 description: ""
 toc:
 ---
