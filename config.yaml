@@ -223,6 +223,9 @@ params:
           enable: false
           name: "View the project"
           url: "https://example.com"
+        info:
+          enable: false
+          content: I reported to Professor Sehoon Ha this semester.
         content: |
           - Taught content including keyframe animation, differential equations, particle systems, inverse kinematics, and rigid body dynamics.
 
@@ -234,6 +237,9 @@ params:
           enable: false
           name: "View the project"
           url: "https://example.com"
+        info:
+          enable: false
+          content: I reported to Milton Hurtado this semester.
         content: |
           - Created configurable suite of modular daemons using C++ which persistently saves logs to devices to resolve issues in the field.
           - Leveraged IPC and threading to create a robust framework to be shipped on the next generation of Toast mass production devices.
@@ -246,6 +252,9 @@ params:
         featuredLink:
           enable: false
           url: "https://example.com"
+        info:
+          enable: false
+          content: I reported to Professor Greg Turk this semester.
         content: |
           - Provided 1:1 lessons on real-time rendering and physically-based rendering concepts to 250+ students.
           - Worked with other 6 TAs to create materials for lecture and projects, based on "Fundamentals of Graphics Programming".
@@ -268,7 +277,7 @@ params:
           - Produced logic for aggregating order receipts on major Kotlin service to automate tax filing, included integration and unit testing.
 
       - job: "Software Engineering Intern (Full Stack)"
-        company: "NCR Corp."
+        company: "NCR Corp"
         companyUrl: "https://example.com"
         date: "May 2021 - Aug 2021"
         info:
@@ -296,7 +305,9 @@ params:
         GPA: "4.0/4.0"
         content: |-
           Extracurricular Activities
-            - Video Game Development
+            - Video Game Development Club
+            - Treasurer of Baha'i Club
+            - Jazz Band (Big Band)
       - title: "Bachelor of Science in Computer Science"
         school:
           name: "Georgia Institute of Technology, Media and Intelligence Specialization"
@@ -306,8 +317,6 @@ params:
         content: |-
           Extracurricular Activities
             - Video Game Development Club
-            - Computer Graphics Teaching Assistant
-            - Generative AI research
             - President of Baha'i Club
             - Jazz Band (Big Band and Combo)
         #featuredLink:
