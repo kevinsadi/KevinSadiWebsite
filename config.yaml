@@ -120,7 +120,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/file/d/1_aQYtM2x8QnKmihUFq7u8k2kTpUPCBao/view?usp=sharing"
+      url: "https://drive.google.com/file/d/14qlgiTCzDyTgcE7Zb10C3O1FLqZ2SmvJ/view?usp=sharing"
       download: true
       newPage: true
     socialLinks:
@@ -208,7 +208,7 @@ params:
     content: |-
       I’m a Masters student at Georgia Tech. I've interned with Toast Inc. twice, most recently working alongside their Android Operating Systems team. At Georgia Tech, I'm currently a Graduate TA for the Computer Animation class. Outside of University, I make games with friends in Unity, UnrealEngine 5, and my own handmade game engine, lei3D.
 
-      For fun, I play drums with several jazz groups around Atlanta. I also love to play volleyball or climb with friends. You can probably catch me on the beach courts on West campus or at one of the Stone Summit locations.
+      For fun, I play drums with several jazz groups around Atlanta. I also love playing volleyball and climbing. You can probably catch me on the beach courts on West campus or at one of the Stone Summit locations.
 
   # Experience
   experience:
